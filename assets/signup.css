@@ -1,0 +1,15 @@
+@layer components {
+  #signup {
+    form {
+      @apply bg-gray-300 p-5 w-[500px] h-fit mb-[calc(100vh/3)] rounded-md;
+    }
+    label,
+    input {
+      display: block;
+    }
+    input {
+      @apply border border-black border-solid rounded-md w-full;
+      @apply py-1 px-4;
+    }
+  }
+}
