@@ -1,0 +1,23 @@
+@layer components {
+  table.users {
+    @apply border-collapse w-full;
+    td,
+    th {
+      @apply border border-black border-solid;
+    }
+    td {
+      @apply text-center;
+    }
+    th {
+      @apply bg-[#04AA6D];
+    }
+    tr {
+      &:nth-child(odd) {
+        @apply bg-[#f2f2f2];
+      }
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+}
