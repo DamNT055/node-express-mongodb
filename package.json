@@ -5,20 +5,27 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js",
-    "dev": "postcss ./assets/main.css -o ./public/output.css --watch"
+    "nodemon": "nodemon app.js",
+    "watch": "postcss ./assets/main.css -o ./public/output.css --watch",
+    "start": "node app.js",
+    "debug": "nodemon --inspect app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
     "ejs": "^3.1.9",
     "express": "^4.19.2",
     "jquery": "^3.7.1",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.1",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.19",

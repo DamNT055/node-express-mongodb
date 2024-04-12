@@ -9,20 +9,20 @@
   <body id="signup" class="font-sans bg-teal-50">
     <div class="sm:container mx-auto">
       <div class="flex flex-row justify-center items-center h-screen">
-        <form action="">
+        <form action="/signup" method="POST">
           <label for="">Email</label>
-          <input name="email" type="text" placeholder="Enter your email" />
+          <input name="email" type="email" placeholder="Enter your email" />
           <label for="">Password</label>
           <input
             name="password"
-            type="text"
+            type="password"
             placeholder="Enter your password"
           />
           <label for="">Repeat Password</label>
-          <input name="repass" type="text" placeholder="Repeat your password" />
+          <input name="repass" type="password" placeholder="Repeat your password" />
           <label for="">Username</label>
           <input name="username" type="text" placeholder="Enter username" />
-          <label for="">Detail</label>
+          <label for="">Description</label>
           <input name="detail" type="text" placeholder="Enter detail" />
           <button
             class="bg-green-500 text-white w-full mt-5 rounded-md px-5 py-2"
